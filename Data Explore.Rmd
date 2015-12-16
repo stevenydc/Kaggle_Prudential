@@ -1,0 +1,13 @@
+---
+title: "Data Explore"
+author: "Steven Yin"
+date: "December 12, 2015"
+output: html_document
+---
+
+```{r}
+
+train <- read.csv("~/Documents/3rd year/Prudential/train.csv")
+library(car)
+scatterplotMatrix(~Employment_Info_1+Employment_Info_4+Employment_Info_6 + Insurance_History_5 + Family_Hist_2 + Response, data=train)
+```
